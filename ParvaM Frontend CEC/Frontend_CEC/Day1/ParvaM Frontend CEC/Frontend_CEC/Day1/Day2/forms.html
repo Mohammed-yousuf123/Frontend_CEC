@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    body{
+        background-color:rgb(66, 66, 202);
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    form{
+        background-color:rgb(135, 92, 181);
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        color: rgb(213, 129, 203);
+        font-size: medium;
+        padding: 100px;
+        margin: 100px;
+    }
+    .you{
+        padding: 50px;
+        border: 2px solid;
+        border-radius: 20px;
+    }
+    .you{
+        padding: 50px;
+    }
+    .noo{
+        padding: 50px;
+        border: 2px solid;
+        border-radius: 20px;
+    }
+</style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="forms.html">forms</a></li>
+            <li><a href="Frontend_CEC/Day1">Table</a></li>
+            </ul>
+            </nav>
+            <h1 style="text-align: center; color:rgb(245, 71, 195); background-color:rgb(132, 193, 247);">Basic Forms</h1>
+<form action="/submit"methode="post">
+    <div class="you">
+    <label for="name">Name:</label>
+    <input type="text"id="name" name="name" required><br><br>
+    </div>
+    <div class="you">
+    <label for="email">email</label>
+    <input type="email"id="email" email="email" required><br><br>
+    </div>
+    <div class="you">
+    <label for="male">male</label>
+    <input type="radio"id="male" name="gender" value="male">
+    </div>
+    <div class="you">
+    <label for="female">female</label>
+    <input type="radio"id="female" name="gender" value="female"><br>
+    </div>
+     <div class="noo">
+    <input type="checkbox"id="terms" name="terms" required>
+    <label for="password">password:</label>
+    <label type="password" id="password" name="password"</label>
+    </div>
+    <br><br>
+    <div class="noo">
+    <h3>terrms and conditions</h3>
+    I agree to the terms and conditions </label>
+    </div>
+    <br><br>
+     <div class="noo">
+    <label for="department">Department:</label>
+    <select id="department" name="department">
+    <option value="ISE">ISE</option>
+    <option value="CIV">CIV</option>
+    <option value="ME">ME</option>
+    <option value="AI&ML">AI&ML</option>
+    </div>
+    <br/><br/>
+    <label for="birthday">Birthday:</label>
+    <input type="date" id="birthday" name="birthday" required/><br><br/>
+    <textarea>Discription</textarea>><br/><br/>
+    <label for="video">upload video</label>
+    <input type="file"id="video" name="video" accept="video"required><br><br>
+    <label for="document">upload document</label>
+    <input type="file"id="document" name="document" accept="document"required><br><br>
+    <label for="pdf">upload pdf</label>
+    <input type="file"id="pdf" name="pdf" accept="pdf"required><br><br>
+    <label for="rating">upload rating</label>
+    <input type="range"id="rating" name="rating" accept="rating"required><br><br>
+    <label for="color">upload color</label>
+    <input type="color"id="color" name="color" accept="color"required><br><br>
+    <input type="submit" value="submit">
+    <input type="reset" value="reset">
+    <br/><br/> 
+</form> 
+</body>
+</html>
