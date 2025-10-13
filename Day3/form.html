@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> 
+    <script src="<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+    <title>form</title>
+    <style>
+        body{
+            background-color: rgb(235, 92, 202);
+        }
+        @media screen and(min-width:600px) and (max-width:900px)
+        {
+            body{
+                background-color: rgb(81, 157, 183);
+            }
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <div class="container mt-4">
+            <h2 class="mb-3 text-primary">Student Registration</h2>
+            <div class="mb-3">
+            <label class="form-label" for="name">Name:</label>
+            <input class="form-control" type="text" id="name" name="name" placeholder="Enter your name"/>
+            <div class="mb-3">
+            <label class="form-label" for="email">email:</label>
+            <input class="form-control" type="text" id="email" name="email" placeholder="abcd@email.com"/>
+            <div class="mb-3">
+            <label class="form-label" for="USN">USN:</label>
+            <input class="form-control" type="text" id="USN" name="USN" placeholder="Enter your USN"/>
+            <div class="mb-3">
+            <label class="form-label" for="department">Department:</label>
+            <input class="form-control" type="text" id="department" name="department" placeholder="Enter your department"/>
+            <select class="form-control">
+                <option>CSE</option>
+                <option>ECE</option>
+                <option>MECH</option>
+                <option>CIVIL</option>
+            </select>
+        </div>
+         <div class="mb-3">
+            <button class="btn btn-success">submit</button>
+            <button class="btn btn-outline-warning"> reset </button> 
+        </div>
+</body>
+</html>
