@@ -1,32 +1,28 @@
-import React, { useState } from "react";
-import ProfileCard from "./components/ProfileCard";
-import List from "./components/List";
-import Advlist from "./components/Advlist";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+import Home from "./pages/Home";
+import Products from "./pages/Products";
+import Services from "./pages/Services";
+import About from "./pages/About";
+import Contact from "./pages/Contact";
 
 function App() {
-  const [activeTab, setActiveTab] = useState("profile");
-
-  return (
-    <div style={{ padding: "20px" }}>
-      <h1>React Components Demo</h1>
-
-      {/* Nav Tabs */}
-      <div style={{ marginBottom: "20px" }}>
-        <button onClick={() => setActiveTab("profile")}>Profile</button>
-        <button onClick={() => setActiveTab("list")}>List</button>
-        <button onClick={() => setActiveTab("list")}>Advlist</button>
-      
-      </div>
-
-      {/* Tab Content */}
-      <div>
-        {activeTab === "profile" && <ProfileCard />}
-        {activeTab === "List" && <List />}
-        {activeTab === "Advlist" && <Advlist />}
-       
-      </div>
-    </div>
-  );
+ return (
+   <Router>
+     <Navbar />
+     <main className="min-h-screen bg-white text-gray-800">
+       <Routes>
+         <Route path="/" element={<Home />} />
+         <Route path="/products" element={<Products />} />
+         <Route path="/services" element={<Services />} />
+         <Route path="/about" element={<About />} />
+         <Route path="/contact" element={<Contact />} />
+       </Routes>
+     </main>
+     <Footer />
+   </Router>
+ );
 }
 
 export default App;
